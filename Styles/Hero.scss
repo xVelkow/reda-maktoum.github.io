@@ -1,0 +1,7 @@
+@forward "Components/hero/Left.scss";
+@forward "Components/hero/Right.scss";
+#hero{
+    display: flex;
+    height: 88vh;
+    align-items: center;
+}

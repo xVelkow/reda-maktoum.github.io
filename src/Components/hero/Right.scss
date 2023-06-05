@@ -1,0 +1,93 @@
+@mixin goAnimate($type, $value){
+    transform: #{$type}($value);
+}
+@mixin placement($top, $right, $frame){
+    position: absolute;
+    top: $top;
+    right: $right;
+    animation: $frame 2.5s infinite ease-in-out alternate;
+}
+.coding {
+    @include placement(25%, 30%, coding);
+    font-size: 1.5rem;
+    color: #ccc;
+    .opening, .closing, .slash{
+        color: #9BA3EB;
+    }
+}
+.reactjs{
+    @include placement(50%, 15%, reactjs);
+}
+.js{
+    @include placement(78%, 35%, js);
+}
+.git{
+    @include placement(50%, 40%, git);
+    width: 45pt;
+}
+.html{
+    @include placement(75%, 18%, html);
+}
+.css{
+    @include placement(30%, 23%, js);
+}
+@keyframes html{
+    from{
+        @include goAnimate(rotate, -45deg)
+    }to{
+        @include goAnimate(rotate, 45deg);
+        @include goAnimate(translateX, 50%)
+    }
+}
+@keyframes git{
+    from{
+        @include goAnimate(rotate, -45deg)
+
+    }
+    to{
+        @include goAnimate(rotate, 45deg);
+        @include goAnimate(translateX, 50%)
+    }
+}
+@keyframes js{
+    from{
+        @include goAnimate(scale, 0.7)
+    }
+    to{
+        @include goAnimate(scale, 1.2);
+        transform: translate(75%,-75%)
+    }
+}
+@keyframes reactjs{
+    from{
+        @include goAnimate(translateY,-100%);
+    }
+    to{
+        @include goAnimate(rotate, .2turn);
+    }
+}
+@keyframes coding {
+    from{
+        @include goAnimate(scale,0.7);
+        @include goAnimate(translateX,-90%);
+    }
+    to{
+        @include goAnimate(scale,1.1);
+        @include goAnimate(translateY,90%);
+    }
+}
+@media (max-width: 768px) {
+    .coding{
+        font-size: 1.1rem;
+        @include placement(15%,45% , coding)
+    }
+    .reactjs{
+        @include placement(30%,6% , reactjs)
+    }
+    .css{
+        @include placement(80%,20% , git)
+    }
+    .js, .html, .git{
+        display: none;
+    }
+}
