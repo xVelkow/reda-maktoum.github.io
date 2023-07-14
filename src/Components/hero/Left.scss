@@ -48,22 +48,22 @@
             font-weight: 600;
         }
     }
-    #hero__CTA{
-        margin-top: .5em;
-        width: 9em;
-        padding: .7em 2.1em;
-        border: .1em solid $main-color-light;
-        border-radius: 2em;
-        background-color: $main-color-light;
-        color: $background-color;
-        font-size: .9rem;
-        &:hover{
-            color: $main-color-light;
-            background-color: $background-color;
-            transition: all .3s ease-in-out;
-            box-shadow: 2px 4px 1px 0 $main-color-dark;
-        }
-    }
+//     #hero__CTA{
+//         margin-top: .5em;
+//         width: 9em;
+//         padding: .7em 2.1em;
+//         border: .1em solid $main-color-light;
+//         border-radius: 2em;
+//         background-color: $main-color-light;
+//         color: $background-color;
+//         font-size: .9rem;
+//         &:hover{
+//             color: $main-color-light;
+//             background-color: $background-color;
+//             transition: all .3s ease-in-out;
+//             box-shadow: 2px 4px 1px 0 $main-color-dark;
+//         }
+//     }
 }
 
 @media (max-width: 480px) {

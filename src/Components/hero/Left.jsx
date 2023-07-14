@@ -14,7 +14,7 @@ const Left = () =>{
                     The <span className='highlight mobile__view'>Full Stack</span> Web Development
                 </span>
             </p>
-            <button id="hero__CTA">Hire me</button>
+            <button className="CTA">Hire me</button>
         </section>
     )
 }

@@ -1,8 +1,10 @@
-@import "Styles/Variables.scss";
+@import "Styles/Variables";
 @import "@fontsource/poppins";
-@import "App.scss";
-@import "Components/Navbar/Navbar.scss";
-@import "Styles/Hero.scss";
-@import "Styles/About.scss";
-@import "Styles/Services.scss";
-@import "Components/Footer/Footer.scss";
+@import "Components/button/Button.scss";
+@import "App";
+@import "Components/Navbar/Navbar";
+@import "Styles/Hero";
+@import "Styles/About";
+@import "Styles/Services";
+@import "Styles/Contact";
+@import "Components/Footer/Footer";

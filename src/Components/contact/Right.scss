@@ -1,0 +1,54 @@
+#contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    #first{
+        margin: 1.5em 0;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        #line{
+            height: .2em;
+            width: 4em;
+            background-color: $main-color-dark;
+        }
+        .brackets{
+            color: $main-color-dark;
+        }
+        h2{
+            color: $grey;
+            font-weight: 500;
+        }
+    }
+    h1{
+        position: relative;
+        color: $main-color-dark;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 2em;
+            height: .07em;
+            background-color: $grey;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    #contact-right{
+        gap: .1em;
+        #first{
+            display: none;
+        }
+        h1{
+            text-align: center;
+            &::before{
+                display: none;
+            }
+
+        }
+        #desktop{
+            display: none;
+        }
+    }
+    
+}
+

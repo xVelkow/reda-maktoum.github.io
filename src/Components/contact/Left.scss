@@ -1,0 +1,54 @@
+#form{
+    font-size: .9rem;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    #mobile{
+        margin-top: 2em;
+        display: none;
+    }
+    .input-group{
+        display: flex;
+        gap: 1.5em;
+        .input input{
+            width: 15em;
+            display: block;
+        }
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        gap: .1em;
+        input, #description{
+            outline: none;
+            color: $grey;
+            border: .1em solid $grey;
+            border-radius: .1em;
+            background-color: #353535;
+            padding: .7em 1em;
+            width: 33.7em;
+        }
+        #description{
+            height: 10em;
+            resize: none;
+        }
+    }
+    @media only screen and (max-width: 768px){
+            #mobile{
+                display: block;
+            }
+        .input-group{
+            flex-direction: column;
+            .input input{
+                width: 19em;
+            }
+        }
+        .input{
+            input,#description{
+                width: 19em;
+            }
+        }
+    }
+    
+}

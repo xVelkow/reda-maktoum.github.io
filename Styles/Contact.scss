@@ -1,0 +1,18 @@
+@import "Components/contact/Left";
+@import "Components/contact/Right";
+#contact{
+    margin-top: 1em;
+    display: flex;
+    gap: 6em;
+}
+@media only screen and (max-width: 768px){
+    #contact{
+        gap: 3em;
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    #contact{
+        align-items: center;
+    }
+}
