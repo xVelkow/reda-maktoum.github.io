@@ -7,30 +7,33 @@
     right: $right;
     animation: $frame 2.5s infinite ease-in-out alternate;
 }
-.coding {
-    @include placement(25%, 30%, coding);
-    font-size: 1.5rem;
-    color: #ccc;
-    .opening, .closing, .slash{
-        color: #9BA3EB;
+section{
+    .coding {
+        @include placement(15%, 35%, coding);
+        font-size: 1.5rem;
+        color: $grey;
+        .opening, .closing, .slash{
+            color: $main-color-dark
+        }
+    }
+    .reactjs{
+        @include placement(50%, 18%, reactjs);
+    }
+    .js{
+        @include placement(75%, 41%, js);
+    }
+    .git{
+        @include placement(45%, 45%, git);
+        width: 45pt;
+    }
+    .html{
+        @include placement(70%, 25%, html);
+    }
+    .css{
+        @include placement(25%, 23%, js);
     }
 }
-.reactjs{
-    @include placement(50%, 15%, reactjs);
-}
-.js{
-    @include placement(78%, 35%, js);
-}
-.git{
-    @include placement(50%, 40%, git);
-    width: 45pt;
-}
-.html{
-    @include placement(75%, 18%, html);
-}
-.css{
-    @include placement(30%, 23%, js);
-}
+
 @keyframes html{
     from{
         @include goAnimate(rotate, -45deg)
@@ -76,16 +79,33 @@
         @include goAnimate(translateY,90%);
     }
 }
-@media (max-width: 768px) {
-    .coding{
-        font-size: 1.1rem;
-        @include placement(15%,45% , coding)
+@media only screen and (max-width: 600px){
+    // phones
+    section{
+        .coding{
+            left: 30%;
+            top: 6%;
+        }
+        .reactjs{
+            left: 70%;
+            top: 75%;
+        }
+        .css{
+            left: 65%;
+            top: 28%;
+        }
+        .js, .html, .git{
+            display: none;
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    // tablets
+    .css{
+        left: 75%;
     }
     .reactjs{
-        @include placement(30%,6% , reactjs)
-    }
-    .css{
-        @include placement(80%,20% , git)
+        left: 78%;
     }
     .js, .html, .git{
         display: none;

@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import "Components/hero/Background.scss"
 const Background = () =>{
     const particlesInit = useCallback(async engine => {
         await loadFull(engine);
@@ -20,7 +19,7 @@ const Background = () =>{
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: true,
+                            enable: false,
                             mode: "push",
                         },
                         onHover: {
@@ -47,7 +46,7 @@ const Background = () =>{
                         color: "#C8CCF4",
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: .2,
                         width: 1,
                     },
                     collisions: {
@@ -71,7 +70,7 @@ const Background = () =>{
                         value: 45,
                     },
                     opacity: {
-                        value: .6,
+                        value: .4,
                     },
                     shape: {
                         type: "circle",

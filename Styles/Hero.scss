@@ -1,6 +1,8 @@
-@forward "Components/hero/Left.scss";
-@forward "Components/hero/Right.scss";
+@import "Components/hero/Background.scss";
+@import "Components/hero/Left.scss";
+@import "Components/hero/Right.scss";
 #hero{
+    position: relative;
     display: flex;
     height: 88vh;
     align-items: center;

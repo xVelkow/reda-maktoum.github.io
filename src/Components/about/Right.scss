@@ -1,0 +1,13 @@
+#me{
+    border-radius: 50%;
+    width: 200pt;
+    margin-right: 10em;
+    padding: .8em;
+    border: .1em solid $main-color-dark;
+}
+@media only screen and (max-width: 768px){
+    #me{
+        width: 100pt;
+        margin: 0;
+    }
+}

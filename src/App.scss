@@ -6,9 +6,24 @@
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar{
+      width: .25em;
+    }
+    ::-webkit-scrollbar-thumb{
+      background-color: $main-color-dark;
+      border-radius: 10em;
+    }
   }
   body{
     background-color: #212121;
+  }
+  .no-scroll{
+    overflow: hidden;
+  }
+  #hero,#about{
+    margin-inline: 4em;
   }
   img{
     -webkit-user-select:none;
@@ -17,4 +32,16 @@
     -o-user-select:none;
     user-select:none;
     pointer-events:none
+  }
+
+  #app{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+  }
+  #app-content{
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
   }
