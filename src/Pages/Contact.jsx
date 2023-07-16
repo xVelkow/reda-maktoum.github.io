@@ -15,20 +15,16 @@ const Contact = () =>{
             setRendered(true)
         }
         if(rendered){
-            if(data.fullname === '' || data.subject === '' || data.email === '' || data.description === ''){
-                alert('fill in all the form fields please.')
-            }else{
-                emailjs.send('service_neplqw3', 'template_0vhc20j',data , 'saP8ZMZTq508fB4GV')
-                .then(()=>alert("Email Sent"))
-                .catch(()=>alert("Something went wrong"))
-            }
+            emailjs.send('service_neplqw3', 'template_0vhc20j',data , 'saP8ZMZTq508fB4GV')
+            .catch(()=>alert('Something went wrong, Try again.'))
         }
     },[submit])
-    return(
+    return(<div style={{display: 'flex', flexDirection: 'column', gap: '7em'}}>
+        <div id='contact-go'></div>
         <div id="contact">
            <Left btn={(p)=>setSubmit(p)} cur={submit} data={(obj)=>setData(obj)}/> 
            <Right btn={(p)=>setSubmit(p)} cur={submit}/>
         </div>
-    )
+        </div>)
 }
 export default Contact

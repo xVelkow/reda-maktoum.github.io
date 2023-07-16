@@ -1,12 +1,13 @@
 #services{
-    height: 88vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 4em;
-    h3{
+    h2{
         text-align: center;
         color: $grey;
+        font-weight: 500;
     }
     section{
         display: flex;
@@ -61,8 +62,6 @@
 
 @media only screen and (max-width: 768px){
     #services{
-    padding-top: 12em;
-
         section{
             flex-direction: column;
             gap: 3em;

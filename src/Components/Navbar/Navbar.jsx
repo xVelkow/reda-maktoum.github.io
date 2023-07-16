@@ -42,12 +42,7 @@ const Navbar = () =>{
                     className='list__item'
                     onClick={()=>{
                         close()
-                        // let y = document.getElementById('about').offsetTop
-                        // const windowHeight = window.innerHeight;
-                        // const scrollAmount = windowHeight * (80 / 100);
-                        // window.scrollTo(0,y - (y*0.07))
-                        // window.scrollTo(0,scrollAmount)
-                        const element = document.getElementById('about')
+                        const element = document.getElementById('about-go')
                         element.scrollIntoView()
                     }}
                 >About</li>
@@ -55,16 +50,21 @@ const Navbar = () =>{
                     className='list__item'
                     onClick={()=>{
                         close()
-                        // let y = document.getElementById('services').offsetTop
-                        // window.scrollTo(0,y - (y*0.01))
-                        const element = document.getElementById('services')
+                        const element = document.getElementById('services-go')
                         element.scrollIntoView()
                     }}
                 >Services</li>
                 {/* <li
                     className='list__item'
                 >Projects</li> */}
-                <button className='list__button'>Contact</button>
+                <button
+                    className='list__button'
+                    onClick={()=>{
+                        close()
+                        const element = document.getElementById('contact-go')
+                        element.scrollIntoView()
+                    }}
+                >Contact</button>
             </ul>
         </nav>
     )

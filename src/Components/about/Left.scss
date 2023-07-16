@@ -12,7 +12,7 @@ main{
         p{
             color: $grey;
             font-size: .95rem;
-            .mobile{
+            .mobile, .tablet{
                 display: none;
             }
             span{
@@ -33,6 +33,21 @@ main{
                 display: none;
             }
             .mobile{
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    main{
+        h1{
+            text-align: center;
+        }
+        section p{
+            .desktop, .mobile{
+                display: none;
+            }
+            .desktop-tablet, .tablet{
                 display: block;
             }
         }

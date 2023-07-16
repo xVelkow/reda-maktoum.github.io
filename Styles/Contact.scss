@@ -1,10 +1,13 @@
 @import "Components/contact/Left";
 @import "Components/contact/Right";
 #contact{
-    margin-top: 1em;
     display: flex;
     gap: 6em;
 }
+#contact-holder{
+    position: relative;
+}
+
 @media only screen and (max-width: 768px){
     #contact{
         gap: 3em;
