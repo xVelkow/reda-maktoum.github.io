@@ -9,8 +9,7 @@ const Left = () =>{
 
                 <p>I enjoy <span>creating things</span> that live on the internet,<br className="desktop-tablet"/> Therefore
                 I started my journey building and designing<br/> <span>Clean</span> and <span>Elegant Websites</span> for fun,
-                <br className="tablet"/>
-                until it turned into a living.</p>
+                <br className="sm"/> until it turned into a living.</p>
 
                 <p>Currently I work as a <span>Web Development</span> freelancer,<br/>
                 being able to look forward for <br className="mobile"/> new opportunities.</p>

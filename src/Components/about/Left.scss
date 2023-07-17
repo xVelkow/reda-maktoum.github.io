@@ -23,13 +23,13 @@ main{
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 599px) and (min-width: 401px){
     main{
         h1{
             text-align: center;
         }
         section p{
-            .desktop{
+            .desktop, .desktop-tablet, .tablet{
                 display: none;
             }
             .mobile{
@@ -38,7 +38,7 @@ main{
         }
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 768px){
+@media only screen and (min-width: 428px) and (max-width: 768px){
     main{
         h1{
             text-align: center;
@@ -52,4 +52,10 @@ main{
             }
         }
     }
+}
+@media only screen and (max-width: 400px) {
+    main section p .sm{
+        display: none;
+    }
+    
 }
