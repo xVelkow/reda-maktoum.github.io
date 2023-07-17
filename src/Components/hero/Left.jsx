@@ -7,7 +7,7 @@ const Left = () =>{
             <p id="hero__paragraph__1">I'am a <span className='highlight'>Web Developer</span></p>
             <p id="hero__paragraph__2">
                 <span className="section">Elevate your <span className="highlight"> Brand</span>'s Online presence</span>
-                <span className="section">with a touch of <span className="highlight">Web Development</span> Excellence!</span>
+                <span className="section"> with a touch of <span className="highlight">Web Development</span> Excellence!</span>
             </p>
             <button className="CTA"
                 onClick={()=>{

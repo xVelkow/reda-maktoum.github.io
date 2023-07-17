@@ -41,14 +41,23 @@
         .input-group{
             flex-direction: column;
             .input input{
-                width: 19em;
+                width: 90%;
             }
         }
         .input{
             input,#description{
-                width: 19em;
+                width: 90%;
             }
         }
     }
-    
+    @media only screen and (max-width: 400px){
+        .input-group .input input{
+            width: 90%;
+        }
+        .input{
+            input,#description{
+                width: 90%;
+            }
+        }
+    }
 }

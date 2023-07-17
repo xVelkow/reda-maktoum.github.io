@@ -62,3 +62,8 @@
       gap: 5em;
     }
   }
+  @media only screen and (max-width:400px){
+    #hero,#about, #contact{
+      margin-inline: 3.5em;
+    }
+  }
