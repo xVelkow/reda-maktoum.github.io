@@ -16,6 +16,35 @@ const Navbar = () =>{
         }
         setRerender(!rerender)
     }
+
+    function isInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    
+        );
+    }
+    window.addEventListener('scroll',()=>{
+        const home = document.getElementById('hero')
+        const about = document.getElementById('about')
+        const services = document.getElementById('services-header')
+        const contact = document.getElementById('contact')
+        const sections = [home, about, services, contact]
+        sections.forEach((section, index )=> {
+            const list = document.getElementsByClassName('list__item')
+            if(isInViewport(section)){
+                for (let item of list) {
+                    item.classList.contains('home') && item.classList.remove('home')
+                }
+                if(index < list.length) {
+                    list[index].classList.add('home')
+                }
+            }
+        });
+    })
     return(
         <nav className='main__navbar'>
             <h2 className='logo'
