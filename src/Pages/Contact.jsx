@@ -20,7 +20,7 @@ const Contact = () =>{
                 setShowCase({ status: 'fail', message: 'Please make sure all fields are filled.' })
             }else{
                 const reg = new RegExp("[a-z0-9]+@[a-z]+\.[a-z]{2,3}")
-                if(reg.test(data.email)){
+                if(reg.test(data.email.toLowerCase())){
                     emailjs.send('service_neplqw3', 'template_0vhc20j',data , 'saP8ZMZTq508fB4GV')
                     .then(()=>setShowCase({ status: 'success', message: 'Email sent.' }))
                     .catch(()=>setShowCase({ status: 'fail', message: 'Something went wrong, Please try again.' }))
