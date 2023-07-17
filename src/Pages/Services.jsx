@@ -2,7 +2,7 @@ const Services = () =>{
     return(<>
         <div id="services">
     <div id="services-go"></div>
-            <h2 id="services-header">What can I provide you?</h2>
+            <h2 id="services-header">Unlocking Your Potential<br/> <span className="highlight">Empowering</span> You with Exceptional Services<span className="highlight">!</span></h2>
             <section>
                 <article>
                     <h4>UI/UX Design</h4>

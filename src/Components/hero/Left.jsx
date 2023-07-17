@@ -6,13 +6,8 @@ const Left = () =>{
             </h1>
             <p id="hero__paragraph__1">I'am a <span className='highlight'>Web Developer</span></p>
             <p id="hero__paragraph__2">
-                <span className="section">a freelancer specialized in <span className='desktop__view'>both</span></span>
-                <span className="section">
-                    <span className="highlight desktop__view">front-end </span>
-                    <span className='desktop__view'>and</span>
-                    <span className="highlight desktop__view"> back-end </span>
-                    The <span className='highlight mobile__view'>Full Stack</span> Web Development
-                </span>
+                <span className="section">Elevate your <span className="highlight"> Brand</span>'s Online presence</span>
+                <span className="section">with a touch of <span className="highlight">Web Development</span> Excellence!</span>
             </p>
             <button className="CTA"
                 onClick={()=>{
@@ -22,7 +17,7 @@ const Left = () =>{
                     const element = document.getElementById('contact-go')
                     element.scrollIntoView()
                 }}
-            >Hire me</button>
+            >Let's work together</button>
         </section>
     )
 }
