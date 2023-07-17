@@ -4,7 +4,6 @@ import Hero from 'Pages/Hero';
 import Footer from './Components/Footer/Footer';
 import Services from './Pages/Services';
 import Contact from './Pages/Contact';
-import up from 'Assets/up.png'
 import { useEffect } from 'react';
 function App() {
   useEffect(()=>{
@@ -22,7 +21,6 @@ function App() {
         <Contact />
         <Footer />
       </div>
-      <a onClick={()=>window.scrollTo(0,0)} id='btt'><img src={up} alt='up'/></a>
     </div>
   );
 }

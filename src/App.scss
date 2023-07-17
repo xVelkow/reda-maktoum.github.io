@@ -41,7 +41,7 @@
   #app{
     position: relative;
     width: 100%;
-    overflow: hidden;
+    contain: paint;
   }
   #app-content{
     display: flex;
