@@ -19,16 +19,23 @@ const Contact = () =>{
             if(data.fullname === '' || data.email === '' || data.subject === '' || data.description === ''){
                 setShowCase({ status: 'fail', message: 'Please make sure all fields are filled.' })
             }else{
-                emailjs.send('service_neplqw3', 'template_0vhc20j',data , 'saP8ZMZTq508fB4GV')
-            .catch(()=>alert('Something went wrong, Try again.'))
+                const reg = new RegExp("[a-z0-9]+@[a-z]+\.[a-z]{2,3}")
+                if(reg.test(data.email)){
+                    emailjs.send('service_neplqw3', 'template_0vhc20j',data , 'saP8ZMZTq508fB4GV')
+                    .then(()=>setShowCase({ status: 'success', message: 'Email sent.' }))
+                    .catch(()=>setShowCase({ status: 'fail', message: 'Something went wrong, Please try again.' }))
+                }else{
+                    setShowCase({ status: 'fail', message: 'Please make sure the email is valid.' })
+                }
             }
         }
         setTimeout(()=>{
             setShowCase(prev=>({ ...prev, status: ''}))
-            setTimeout(()=>{
-                setShowCase({ status: '', message: '' })
-            },1500)
-        },3000)
+            
+        },3500)
+        setTimeout(()=>{
+            setShowCase({ status: '', message: '' })
+        },4500)
     },[submit])
     return(<div style={{display: 'flex', flexDirection: 'column', gap: '7em', position: 'relative'}}>
         <div id='contact-go'></div>

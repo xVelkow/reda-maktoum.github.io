@@ -14,7 +14,15 @@ const Left = () =>{
                     The <span className='highlight mobile__view'>Full Stack</span> Web Development
                 </span>
             </p>
-            <button className="CTA">Hire me</button>
+            <button className="CTA"
+                onClick={()=>{
+                    let menuClass = document.getElementsByClassName('menu')[0];
+                    menuClass.classList.remove('menu-opened')
+                    document.body.classList.remove('no-scroll')
+                    const element = document.getElementById('contact-go')
+                    element.scrollIntoView()
+                }}
+            >Hire me</button>
         </section>
     )
 }
