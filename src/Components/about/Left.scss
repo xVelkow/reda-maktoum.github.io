@@ -40,9 +40,6 @@ main{
 }
 @media only screen and (min-width: 428px) and (max-width: 768px){
     main{
-        h1{
-            text-align: center;
-        }
         section p{
             .desktop, .mobile{
                 display: none;
@@ -51,6 +48,11 @@ main{
                 display: block;
             }
         }
+    }
+}
+@media only screen and (max-width:768px){
+    main h1{
+        text-align: center;
     }
 }
 @media only screen and (max-width: 400px) {
