@@ -22,7 +22,12 @@ const Contact = () =>{
                 const reg = new RegExp("[a-z0-9]+@[a-z]+\.[a-z]{2,3}")
                 if(reg.test(data.email.toLowerCase())){
                     emailjs.send('service_neplqw3', 'template_0vhc20j',data , 'saP8ZMZTq508fB4GV')
-                    .then(()=>setShowCase({ status: 'success', message: 'Email sent.' }))
+                    .then(()=>{
+                        setShowCase({ status: 'success', message: 'Email sent.' })
+                        const emailBtn = document.querySelectorAll('#contact button');
+                        emailBtn[0].textContent = "Email sent."
+                        emailBtn[1].textContent = "Email sent."
+                    })
                     .catch(()=>setShowCase({ status: 'fail', message: 'Something went wrong, Please try again.' }))
                 }else{
                     setShowCase({ status: 'fail', message: 'Please make sure the email is valid.' })
@@ -31,10 +36,12 @@ const Contact = () =>{
         }
         setTimeout(()=>{
             setShowCase(prev=>({ ...prev, status: ''}))
-            
         },3500)
         setTimeout(()=>{
             setShowCase({ status: '', message: '' })
+            const emailBtn = document.querySelectorAll('#contact button');
+            emailBtn[0].textContent = "Send Message"
+            emailBtn[1].textContent = "Send Message"
         },4500)
     },[submit])
     return(<div style={{display: 'flex', flexDirection: 'column', gap: '7em', position: 'relative'}}>
