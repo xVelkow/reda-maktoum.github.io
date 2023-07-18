@@ -57,16 +57,16 @@
             color: $grey;
             font-size: 1rem;
         }
-        &::after{
-            position: absolute;
-            content: 'Beta';
-            font-size: .55rem;
-            color: $background-color;
-            font-weight: 600;
-            background-color: $secondary-color-light;
-            border-radius: .8em;
-            padding: .02em .8em;
-        }
+        // &::after{
+        //     position: absolute;
+        //     content: 'Beta';
+        //     font-size: .55rem;
+        //     color: $background-color;
+        //     font-weight: 600;
+        //     background-color: $secondary-color-light;
+        //     border-radius: .8em;
+        //     padding: .02em .8em;
+        // }
     }
 }
 @media only screen and (max-width: 768px){
