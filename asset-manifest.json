@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/reda-maktoum.github.io/static/css/main.5705bee3.css",
-    "main.js": "/reda-maktoum.github.io/static/js/main.798da804.js",
-    "static/media/poppins-devanagari-400-normal.woff": "/reda-maktoum.github.io/static/media/poppins-devanagari-400-normal.0e11b62db931f85340d4.woff",
-    "static/media/poppins-devanagari-400-normal.woff2": "/reda-maktoum.github.io/static/media/poppins-devanagari-400-normal.64d5f06ee726edd58ca3.woff2",
-    "static/media/me.jpg": "/reda-maktoum.github.io/static/media/me.7f4e1d199081294b499f.jpg",
-    "static/media/poppins-latin-400-normal.woff": "/reda-maktoum.github.io/static/media/poppins-latin-400-normal.cda9c93f49237f11c766.woff",
-    "static/media/poppins-latin-400-normal.woff2": "/reda-maktoum.github.io/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
-    "static/media/poppins-latin-ext-400-normal.woff": "/reda-maktoum.github.io/static/media/poppins-latin-ext-400-normal.8cc52669c8e8a6735699.woff",
-    "static/media/poppins-latin-ext-400-normal.woff2": "/reda-maktoum.github.io/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
-    "static/media/reactjs.svg": "/reda-maktoum.github.io/static/media/reactjs.a060cbe85e50deda1d61452cee9de5b2.svg",
-    "static/media/gmail.svg": "/reda-maktoum.github.io/static/media/gmail.2c70fa80e7595c831171e23d3d580539.svg",
-    "static/media/js.svg": "/reda-maktoum.github.io/static/media/js.34cd9860149518f3e4ecc21a4b50efae.svg",
-    "static/media/git.svg": "/reda-maktoum.github.io/static/media/git.43d387b77657117c0e407816cbf72476.svg",
-    "static/media/linkedin.svg": "/reda-maktoum.github.io/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
-    "static/media/css.svg": "/reda-maktoum.github.io/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
-    "index.html": "/reda-maktoum.github.io/index.html",
-    "static/media/html.svg": "/reda-maktoum.github.io/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.5705bee3.css.map": "/reda-maktoum.github.io/static/css/main.5705bee3.css.map",
-    "main.798da804.js.map": "/reda-maktoum.github.io/static/js/main.798da804.js.map"
+    "main.css": "/static/css/main.7b099979.css",
+    "main.js": "/static/js/main.67f20a63.js",
+    "static/media/poppins-devanagari-400-normal.woff": "/static/media/poppins-devanagari-400-normal.0e11b62db931f85340d4.woff",
+    "static/media/poppins-devanagari-400-normal.woff2": "/static/media/poppins-devanagari-400-normal.64d5f06ee726edd58ca3.woff2",
+    "static/media/me.jpg": "/static/media/me.7f4e1d199081294b499f.jpg",
+    "static/media/poppins-latin-400-normal.woff": "/static/media/poppins-latin-400-normal.cda9c93f49237f11c766.woff",
+    "static/media/poppins-latin-400-normal.woff2": "/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-ext-400-normal.woff": "/static/media/poppins-latin-ext-400-normal.8cc52669c8e8a6735699.woff",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
+    "static/media/reactjs.svg": "/static/media/reactjs.a060cbe85e50deda1d61452cee9de5b2.svg",
+    "static/media/gmail.svg": "/static/media/gmail.2c70fa80e7595c831171e23d3d580539.svg",
+    "static/media/js.svg": "/static/media/js.34cd9860149518f3e4ecc21a4b50efae.svg",
+    "static/media/git.svg": "/static/media/git.43d387b77657117c0e407816cbf72476.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
+    "static/media/css.svg": "/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "static/media/html.svg": "/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "index.html": "/index.html",
+    "main.7b099979.css.map": "/static/css/main.7b099979.css.map",
+    "main.67f20a63.js.map": "/static/js/main.67f20a63.js.map"
   },
   "entrypoints": [
-    "static/css/main.5705bee3.css",
-    "static/js/main.798da804.js"
+    "static/css/main.7b099979.css",
+    "static/js/main.67f20a63.js"
   ]
 }
